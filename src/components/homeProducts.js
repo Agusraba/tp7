@@ -1,18 +1,15 @@
 import React from "react";
 import Product from "./producto";
 import { Row, Container } from 'react-bootstrap'
-import DetalleProd from "./detalleProd";
 
-
-const Products = (id) => {
+const HomeProducts = () => {
     const [products, setProducts] = React.useState([]);
     React.useEffect(() => {
-        fetch(`https://dummyjson.com/products`)
+        fetch(`https://dummyjson.com/products?limit=6`)
         .then(res => res.json())
         .then(res => setProducts(res.products))
         .catch(err => console.error(err));
     }, []);
-    console.log(products)
 
     return (
         <Container>
@@ -24,4 +21,4 @@ const Products = (id) => {
     );
 }
 
-export default Products;
+export default HomeProducts;
