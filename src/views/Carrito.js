@@ -1,6 +1,6 @@
 import { useContextState, ActionTypes } from "../Context";
 import Button from 'react-bootstrap/Button';
-import CardCarrito from "../components/CardCarrito";
+import CardCarrito from "../components/CarritoCard";
 import { Container, Row, Col } from "react-bootstrap";
 import delta from '../images/delta.png';
 import ferrum from '../images/ferrum.png';

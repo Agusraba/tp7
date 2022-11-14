@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Col } from 'react-bootstrap'
 import { useNavigate } from "react-router-dom";
+import { ProductoShape } from "../shapes/ProductoShape";
 
 const Product = (props) => {
   const navigate = useNavigate()
@@ -21,6 +22,10 @@ const Product = (props) => {
 </Card>
 </Col>
     );
+}
+
+Product.propTypes = {
+  props: ProductoShape.isRequired
 }
 
 export default Product;

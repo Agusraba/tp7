@@ -11,6 +11,7 @@ import QuienesSomos from './views/quienesSomos';
 import Carrito from './views/Carrito';
 import Contacto from './views/Contacto';
 
+
 function App() {
   return (
     <div className='App'>
@@ -31,5 +32,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
