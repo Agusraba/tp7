@@ -2,6 +2,7 @@ import logo from '../../images/Logo.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 const LayoutNavbar = () => {
   return (
@@ -12,8 +13,11 @@ const LayoutNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-end flex-grow-1 pe-3">
-            <Nav.Link href="/">INICIO</Nav.Link>
-            <Nav.Link href="/productos">PRODUCTOS</Nav.Link>
+          <Link to="/" className="nav-link">Home</Link>
+            <Link to="/productos" className="nav-link">Productos</Link>
+            <Link to="/contact" className="nav-link">Contacto</Link>
+            <Link to="/quienesSomos" className="nav-link">Nosotros</Link>
+            <Link to="/carrito" className="nav-link">Carrito</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
